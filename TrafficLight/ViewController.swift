@@ -7,13 +7,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class ViewController: UIViewController {
+    @IBOutlet var redLight: UIView!
+    @IBOutlet var yellowLight: UIView!
+    @IBOutlet var greenLight: UIView!
+    @IBOutlet var startButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        redLight.layer.cornerRadius = 50
+        yellowLight.layer.cornerRadius = 50
+        greenLight.layer.cornerRadius = 50
+        
     }
 
-
+    @IBAction func startButtonTapped() {
+    }
+    
 }
 
